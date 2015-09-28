@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kvuc 404 error</title>
+    <!-- http://www.robotstxt.org/meta.html -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://vucdigital.dk/library/css/styles.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-xs-12">
+            <center>
+                <h3>Materialet er flyttet!</h3>
+                <h1>Vores nye adresse er: <br/><a href="https://vucdigital.dk">vucdigital.dk</a></h1>
+                <h2>Gå direkte til:<br/>
+                <a href="https://vucdigital.dk/kemi">Kemi</a> eller<br/>
+                <a href="https://vucdigital.dk/engelsk">Engelsk</a>
+                </h3>
+                <p> Du bliver sendt videre om <b><span id="counter">10</span></b> sekunder</p>
+            </center>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+
+        sec = 10;
+        counter = document.getElementById('counter');
+        counter.innerText = sec;
+        i = setInterval(function() {
+            --sec;
+
+            if (sec < 0) {
+                window.location.href = "https://vucdigital.dk";
+            }
+
+         	   counter.innerText = sec;
+        }, 1000);
+    });
+    </script>
+</body>
+
+</html>
