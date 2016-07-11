@@ -14,3 +14,11 @@ h4 {
 	margin: 0px; 
 	line-height: 1em;
 }
+
+center {
+	/*margin-top: 100px;*/
+}
+
+#errorFontsize{
+	font-size: 18px;
+}
